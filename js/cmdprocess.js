@@ -1,5 +1,6 @@
      var e1entry = 1
      var area1 = 'LOL'
+     var s = 'GlowBear Indevelopment Edition <br> A simple JavaScript based web terminal that supports commands and stuff <br> Use help command for command listing'
      var ynh = 'GlowBear Help <br> Commands: <br> write {insert string message here} (Prints the message to the console)'
      var dowrite = 'hi'
           
