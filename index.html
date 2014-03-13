@@ -12,7 +12,8 @@ h1 {
      var cnum = 0
      function updatecnum()
      {
-          cnum = cnum + 1
+          var add = document.getElementById("myId").value;
+          cnum = cnum + add
           document.getElementById('counter').innerHTML = cnum;
      }
 </script>
@@ -20,5 +21,6 @@ h1 {
 <h1>GlowBear [dev]</h1>
 <p class='hi' id='counter'>this is a counter click the button thingy to make it go up :D</p>
 <button type='button' onclick='updatecnum()'>go up :D</button>
+<p>go up by </p><input type="text" id="myId" name="textid" value="1">
 </body>
 </html>
