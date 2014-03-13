@@ -15,14 +15,18 @@ h1 {
  }
 </style>
 <script>
+     var cprocess = 'dev'
      var e1entry = 1
      var area1 = 'LOL'
      var ynh = 'YA NEED HELP? <br> HERE SOME HELP O!'
      document.getElementById('echo1').innerHTML = 'ECHO1';
      function validecho1() {
+          document.getElementById('gbtitle').innerHTML = 'GlowBear [' + cprocess + ']'
           e1entry = document.getElementById('echo1form').value;
           if(e1entry == 'help'){
+             cprocess = 'help'
 	     area1 = area1 + ' <br/> ' + ynh;
+	     cprocess = 'dev'
           }else{	
 	     area1 = area1 + ' <br/> ' + e1entry;
 	     area1 = area1 + ' <br/> ' + e1entry + ' is not a valid GlowBear command';
@@ -31,7 +35,7 @@ h1 {
      }
 </script>
 <body>
-<h1>GlowBear [dev]</h1>
+<h1 id='gbtitle'>GlowBear [dev]</h1>
 <p class='hi'>:D</p>
 <p class='hi' id='echo1'> LOL </p>
 <input type="text" id="echo1form" name="textid" value="hi">
