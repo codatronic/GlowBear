@@ -8,9 +8,17 @@ h1 {
      color:red;
 }
 </style>
+<script>
+     var cnum = 0
+     function updatecnum()
+     {
+          cnum = cnum + 1
+          document.getElementById('counter').innerHTML = cnum;
+     }
+</script>
 <body>
 <h1>GlowBear [dev]</h1>
-<div class='hi'>hi</div>
-<div class='hi'>HOWAREWYOU<</div>
+<p class='hi' id='counter'>this is a counter click the button thingy to make it go up :D</p>
+<button type='button' onclick='updatecnum()'>go up :D</button>
 </body>
 </html>
