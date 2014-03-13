@@ -4,13 +4,13 @@
      var dowrite = 'hi'
      document.getElementById('echo1').innerHTML = area1;
           
-     function setcp(p) {
+     function setcp(p) { // set the currently running process
      	cprocess = p
      	document.getElementById('gbtitle').innerHTML = 'GlowBear [' + cprocess + ']';
      	document.title = 'GlowBear [' + cprocess + ']';
      }
      document.getElementById('echo1').innerHTML = 'ECHO1';
-     function validecho1() {
+     function validecho1() { // validate commands
           e1entry = document.getElementById('echo1form').value;
           area1 = area1 + ' <br/> >' + e1entry;
           if(e1entry == 'help'){
@@ -29,4 +29,10 @@
              }
           }
           document.getElementById('echo1').innerHTML = area1;
+     }
+     function blink1() {
+     	blinkback = area1
+     	area1 = area1 + ' <br/> ' + '>';
+     	area1 = blinkback
+     	
      }
