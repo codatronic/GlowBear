@@ -12,6 +12,7 @@
      document.getElementById('echo1').innerHTML = 'ECHO1';
      function validecho1() {
           e1entry = document.getElementById('echo1form').value;
+          area1 = area1 + ' <br/> >' + e1entry;
           if(e1entry == 'help'){
              setcp('help')
 	     area1 = area1 + ' <br/> ' + ynh;
@@ -24,7 +25,6 @@
              	
              }else{
              setcp('notvalid')
-	     area1 = area1 + ' <br/> ' + e1entry;
 	     area1 = area1 + ' <br/> ' + e1entry + ' is not a valid GlowBear command';
              }
           }
