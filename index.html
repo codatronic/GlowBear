@@ -18,6 +18,7 @@ h1 {
      var e1entry = 1
      var area1 = 'LOL'
      var ynh = 'U NEED HELPS'
+     var dowrite = 'hi'
           
      function setcp(p) {
      	cprocess = p
@@ -31,9 +32,17 @@ h1 {
              setcp('help')
 	     area1 = area1 + ' <br/> ' + ynh;
           }else{
+             if (e1entry.substring(0, 5) == "write") {
+             	dowrite = e1entry.substring(< 6)
+             	area1 = area1 + ' <br/> ' + dowrite;
+             	setcp('dowrite')
+             	
+             	
+             }else{
              setcp('notvalid')
 	     area1 = area1 + ' <br/> ' + e1entry;
 	     area1 = area1 + ' <br/> ' + e1entry + ' is not a valid GlowBear command';
+             }
           }
           document.getElementById('echo1').innerHTML = area1;
      }
