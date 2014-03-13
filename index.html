@@ -15,23 +15,28 @@ h1 {
  }
 </style>
 <script>
-     var cprocess = 'this will show the recently used process or the one running'
+     setcp('this will show the recently used process or the one running')
      var e1entry = 1
      var area1 = 'LOL'
      var ynh = 'YA NEED HELP? <br> HERE SOME HELP O!'
      document.getElementById('echo1').innerHTML = 'ECHO1';
      function validecho1() {
-          document.getElementById('gbtitle').innerHTML = 'GlowBear [' + cprocess + ']'
           e1entry = document.getElementById('echo1form').value;
           if(e1entry == 'help'){
-             cprocess = 'help'
+             setcp('help')
 	     area1 = area1 + ' <br/> ' + ynh;
           }else{
-             cprocess = 'notvalid'
+             setcp('notvalid')
 	     area1 = area1 + ' <br/> ' + e1entry;
 	     area1 = area1 + ' <br/> ' + e1entry + ' is not a valid GlowBear command';
           }
           document.getElementById('echo1').innerHTML = area1;
+     }
+     function setcp(process) {
+     	cprocess = process;
+     	document.getElementById('gbtitle').innerHTML = 'GlowBear [' + cprocess + ']';
+     	
+     	
      }
 </script>
 <body>
