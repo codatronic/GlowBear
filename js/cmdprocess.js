@@ -1,6 +1,6 @@
      var e1entry = 1
      var area1 = 'LOL'
-     var ynh = 'U NEED HELPS'
+     var ynh = 'GlowBear Help <br> Commands: <br> write <message> (Prints the message to the console)'
      var dowrite = 'hi'
           
      function setcp(p) {
@@ -16,7 +16,7 @@
 	     area1 = area1 + ' <br/> ' + ynh;
           }else{
              if (e1entry.substring(0, 5) == "write") {
-             	setcp('dowrite')
+             	setcp('write')
              	dowrite = e1entry.substring(6)
              	area1 = area1 + ' <br/> ' + dowrite;
              	
