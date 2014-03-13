@@ -16,11 +16,16 @@ h1 {
 </style>
 <script>
      var e1entry = 1
-     var area1 = 1
+     var area1 = 'LOL'
+     var ynh = 'YA NEED HELP? <br> HERE SOME HELP O!'
      document.getElementById('echo1').innerHTML = 'ECHO1';
      function validecho1() {
           e1entry = document.getElementById('echo1form').value;
-          area1 = area1 + ' <br/> ' + e1entry;
+          if(e1entry == 'help'){
+	     area1 = area1 + ' <br/> ' + ynh;
+          }else{	
+	     area1 = area1 + ' <br/> ' + e1entry;	
+          }
           document.getElementById('echo1').innerHTML = area1;
      }
 </script>
