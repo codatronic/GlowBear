@@ -1,6 +1,6 @@
      var e1entry = 1
      var area1 = 'LOL'
-     var ynh = 'GlowBear Help <br> Commands: <br> write <message> (Prints the message to the console)'
+     var ynh = 'GlowBear Help <br> Commands: <br> write {insert string message here} (Prints the message to the console)'
      var dowrite = 'hi'
           
      function setcp(p) {
