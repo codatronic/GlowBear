@@ -33,6 +33,8 @@
      function blink1() {
      	blinkback = area1
      	area1 = area1 + ' <br/> ' + '>';
-     	area1 = blinkback
-     	
+     	setTimeout('blink2()', '1000')
+     }
+     function blink2() {
+     	    area1 = blinkback
      }
