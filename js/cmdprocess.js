@@ -15,6 +15,7 @@
           if(e1entry == 'help'){
              setcp('help')
 	     area1 = area1 + ' <br/> ' + 'GlowBear Help <br> Commands: <br> write {insert string message here} (Prints the message to the console) <br> repo (Takes you to the GitHub repository)';
+	     document.getElementById('echo1').innerHTML = area1;
           }else{
              if (e1entry.substring(0, 6) == "write ") {
              	setcp('write')
