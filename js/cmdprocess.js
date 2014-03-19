@@ -1,6 +1,6 @@
      var e1entry = 1
      var area1 = 'GlowBear Indevelopment Edition <br> A simple JavaScript based web terminal that supports commands and stuff <br> Use help command for command listing'
-     var ynh = 'GlowBear Help <br> Commands: <br> write {insert string message here} (Prints the message to the console) <br/> repo (Takes you to the GitHub repository)'
+     var ynh = 'GlowBear Help <br> Commands: <br> write {insert string message here} (Prints the message to the console) <br> repo (Takes you to the GitHub repository)'
      var dowrite = 'hi'
      document.getElementById('echo1').innerHTML = area1;
           
@@ -21,8 +21,6 @@
              	setcp('write')
              	dowrite = e1entry.substring(6)
              	area1 = area1 + ' <br/> ' + dowrite;
-             	
-             	
              }else{
              	if (e1entry == "repo") {
              		window.location.assign('https://github.com/codatronic/GlowBear')
