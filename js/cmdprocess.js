@@ -15,7 +15,7 @@
           area1 = area1 + ' <br/> >' + e1entry;
           if(e1entry == 'help'){
              setcp('help')
-	     area1 = area1 + ' <br/> ' + ynh;
+	     area1 = area1 + ' <br> ' + ynh;
           }else{
              if (e1entry.substring(0, 6) == "write ") {
              	setcp('write')
