@@ -1,6 +1,5 @@
      var e1entry = 1
      var area1 = 'GlowBear Indevelopment Edition <br> A simple JavaScript based web terminal that supports commands and stuff <br> Use help command for command listing'
-     var ynh = 'GlowBear Help <br> Commands: <br> write {insert string message here} (Prints the message to the console) <br> repo (Takes you to the GitHub repository)'
      var dowrite = 'hi'
      document.getElementById('echo1').innerHTML = area1;
           
@@ -15,7 +14,7 @@
           area1 = area1 + ' <br/> >' + e1entry;
           if(e1entry == 'help'){
              setcp('help')
-	     area1 = area1 + ' <br> ' + ynh;
+	     area1 = area1 + ' <br/> ' + 'GlowBear Help <br> Commands: <br> write {insert string message here} (Prints the message to the console) <br> repo (Takes you to the GitHub repository)';
           }else{
              if (e1entry.substring(0, 6) == "write ") {
              	setcp('write')
@@ -31,7 +30,7 @@
           }
           document.getElementById('echo1').innerHTML = area1;
      }
-     }
+    }
      function blink1() {
      	blinkback = area1
      	area1 = area1 + ' <br/> ' + '>';
