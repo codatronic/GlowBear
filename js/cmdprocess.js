@@ -17,7 +17,7 @@
              setcp('help')
 	     area1 = area1 + ' <br/> ' + ynh;
           }else{
-             if (e1entry.substring(0, 5) == "write") {
+             if (e1entry.substring(0, 6) == "write ") {
              	setcp('write')
              	dowrite = e1entry.substring(6)
              	area1 = area1 + ' <br/> ' + dowrite;
