@@ -36,7 +36,6 @@ document.getElementById('echo1').innerHTML = area1;
           }
           document.getElementById('echo1').innerHTML = area1;
      }
-    }
      function blink1() {
       blinkback = area1
       area1 = area1 + ' <br/> ' + '>';
