@@ -25,14 +25,10 @@ document.getElementById('echo1').innerHTML = area1;
               if (e1entry == "repo") {
               window.location.assign('https://github.com/codatronic/GlowBear')
               }else{
-                   if (e1entry == "process") {
-                   area1 = area1 + ' <br/> ' + 'Process:' + cprocess
-                   }else{
-                   
              setcp('notvalid')
 area1 = area1 + ' <br/> ' + e1entry + ' is not a valid GlowBear command';
              }
-          
+          }
           document.getElementById('echo1').innerHTML = area1;
      }
     }
